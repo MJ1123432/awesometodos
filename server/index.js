@@ -14,11 +14,7 @@ app.get("/", (req, res) => {
 const router = require("./routes");
 app.use("/api", router);
 
-const port = process.env.PORT || 3000;
-
-app.listen(port, "0.0.0.0", () => {
-  console.log(`Server is listening on port ${port}`);
-});
+const port = process.env.PORT || 5000;
 
 const startServer = async () => {
     await connectToMongoDB();
