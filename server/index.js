@@ -16,6 +16,10 @@ app.use("/api", router);
 
 const port = process.env.PORT || 10000;
 
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Server is listening on port ${port}`);
+});
+
 const startServer = async () => {
     await connectToMongoDB();
     app.listen(port, () => {
