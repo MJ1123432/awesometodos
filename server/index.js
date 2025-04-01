@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 const router = require("./routes");
 app.use("/api", router);
 
-const port = process.env.PORT || 10000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server is listening on port ${port}`);
